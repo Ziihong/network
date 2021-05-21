@@ -14,7 +14,7 @@ while True:
         mysock.close()
         break
     
-    # input error
+    # input 에러
     if(len(input_cmd.split()) != 2):
         print("Try again.")
         continue
