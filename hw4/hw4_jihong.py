@@ -29,7 +29,7 @@ while is_end != 1:
             IP = addr[0]
             PORT = addr[1]
 
-            print("Connection from host {}, port {}, socket fd {}" .format(IP, PORT, clientSocket.fileno()))
+            print("connection from host {}, port {}, socket {}" .format(IP, PORT, clientSocket.fileno()))
             
             connect_lst.append(clientSocket)
             
@@ -73,7 +73,7 @@ while is_end != 1:
                 print(recvData.decode())
 
             else:
-                print('Connection Closed {}'.format(sock.fileno()))
+                print("Connection Closed {}".format(sock.fileno()))
                 sock.close()
                 connect_lst.remove(sock)                
             
